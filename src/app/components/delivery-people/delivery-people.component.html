@@ -1,0 +1,31 @@
+<h3>Naši dostavljalci</h3>
+
+<div class="person" *ngFor="let dost of dostavljalec">
+  <div class="person-name">{{ dost.firstName }} {{ dost.lastName }}</div>
+
+  <div class="icons">
+    <!-- Show transport mode -->
+    <div class="transport">
+      <ng-container
+        class="person-other"
+        *ngIf="dost.meansOfTransport === 'car'; else elseBlock"
+        ><fa-icon [icon]="faCarSide"></fa-icon
+      ></ng-container>
+      <ng-template #elseBlock
+        ><fa-icon [icon]="faBicycle"></fa-icon
+      ></ng-template>
+    </div>
+    <!-- Show availability -->
+    <div class="checkmark">
+      <ng-container
+        class="person-other"
+        *ngIf="dost.availability === true; else elseBlock"
+      >
+        <fa-icon [icon]="faCircleCheck"></fa-icon>
+      </ng-container>
+      <ng-template #elseBlock
+        ><fa-icon [icon]="faCircleXmark"></fa-icon
+      ></ng-template>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,40 @@
+h3 {
+    text-align: center;
+    padding: 10px;
+}
+
+.person {
+    width: 400px;
+    height: 80px;
+    border-bottom-style: solid;
+    border-color: black;
+    transition: 0.4s;
+}
+
+.person:hover {
+    background-color: rgb(213, 206, 206);
+}
+
+.person-name {
+    font-weight: 600;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.person-other {
+    text-align: center;
+}
+
+fa-icon {
+    font-size: 35px;
+}
+
+.icons {
+    display: flex;
+    justify-content: right;
+    padding-right: 20px;
+}
+
+.transport {
+    padding-right: 50px;
+}
