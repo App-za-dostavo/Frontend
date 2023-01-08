@@ -19,11 +19,11 @@
     <div class="checkmark">
       <ng-container
         class="person-other"
-        *ngIf="dost.availability === true; else elseBlock"
+        *ngIf="dost.availability === true; else another"
       >
         <fa-icon [icon]="faCircleCheck"></fa-icon>
       </ng-container>
-      <ng-template #elseBlock
+      <ng-template #another
         ><fa-icon [icon]="faCircleXmark"></fa-icon
       ></ng-template>
     </div>

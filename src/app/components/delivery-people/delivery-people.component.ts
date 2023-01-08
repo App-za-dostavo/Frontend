@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Route, Router } from '@angular/router';
 import { Dostavljalec } from 'src/app/models/dostavljalec';
 import { DeliveryService } from 'src/app/services/delivery.service';
 import {

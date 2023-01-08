@@ -1,0 +1,40 @@
+.narocilo-items {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+#item {
+    padding: 5px;
+}
+
+.narocilo-dostavljalec {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.narocilo-cas {
+    align-items: center;
+    position: absolute;
+    left: 70%;
+}
+
+.list-container {
+    width: 500px;
+    height: 80px;
+    border-bottom-style: solid;
+    border-color: black;
+    transition: 0.4s;
+    position: relative;
+}
+
+
+.list-container:hover {
+    background-color: rgb(213, 206, 206);
+}

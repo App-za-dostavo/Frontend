@@ -1,1 +1,16 @@
-<p>list works!</p>
+<h3>Seznam naročil</h3>
+
+<div class="list-container" *ngFor="let narocilo of seznam">
+  <div class="narocilo-items">
+    <div id="item">{{ narocilo.items }},</div>
+    <div>{{ narocilo.cost }} €</div>
+  </div>
+  <div class="narocilo-dostavljalec">
+    <div>{{ narocilo.firstName }}</div>
+    <div>{{ narocilo.lastName }}</div>
+  </div>
+  <div class="narocilo-cas">
+    <div>čas: {{ narocilo.time }} min</div>
+    <div>razdalja: {{ narocilo.distance }} km</div>
+  </div>
+</div>

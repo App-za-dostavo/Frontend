@@ -1,5 +1,6 @@
 export const environment = {
-    production: false,
-    dostavljalecUrl: "http://localhost:8080",
-    potUrl: "http://localhost:8081"
-}
+  production: false,
+  dostavljalecUrl: 'http://localhost:8082',
+  potUrl: 'http://localhost:8081',
+  narociloUrl: 'http://localhost:8080',
+};

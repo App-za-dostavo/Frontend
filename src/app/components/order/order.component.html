@@ -1,0 +1,17 @@
+<h3>Naroči</h3>
+
+<ul class="orders">
+  <li *ngFor="let narocilo of listNarocil" class="order">
+    <button
+      [class.selected]="narocilo === selectedNarocilo"
+      type="button"
+      class="inner-button"
+      (click)="onSelect(narocilo)"
+    >
+      <span class="items">{{ narocilo.items }}</span>
+      <span class="cost">{{ narocilo.cost }}</span>
+    </button>
+  </li>
+</ul>
+
+<button class="bottom-button" (click)="postNewOrder()">Oddaj naročilo</button>
