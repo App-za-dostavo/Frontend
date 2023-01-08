@@ -27,19 +27,21 @@ export class OrderComponent implements OnInit {
 
   postNewOrder() {
     console.log('Hello, this is ', JSON.stringify(this.novoNarocilo));
-    this.deliveryService.postOrder(46.5, 14, this.novoNarocilo).subscribe(
-      (data) => {
-        this.novoNarocilo = data;
-      },
-      (error) =>
-        console.error(
-          'error',
-          error,
-          typeof this.novoNarocilo,
-          JSON.stringify(this.novoNarocilo),
-          typeof JSON.stringify(this.novoNarocilo)
-        )
-    );
+    this.deliveryService
+      .postOrder(46.053762, 14.470407, this.novoNarocilo)
+      .subscribe(
+        (data) => {
+          this.novoNarocilo = data;
+        },
+        (error) =>
+          console.error(
+            'error',
+            error,
+            typeof this.novoNarocilo,
+            JSON.stringify(this.novoNarocilo),
+            typeof JSON.stringify(this.novoNarocilo)
+          )
+      );
     console.log(this.getNarocilo());
   }
 

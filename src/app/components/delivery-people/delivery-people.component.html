@@ -21,10 +21,10 @@
         class="person-other"
         *ngIf="dost.availability === true; else another"
       >
-        <fa-icon [icon]="faCircleCheck"></fa-icon>
+        <fa-icon [icon]="faCircleCheck" id="check"></fa-icon>
       </ng-container>
       <ng-template #another
-        ><fa-icon [icon]="faCircleXmark"></fa-icon
+        ><fa-icon [icon]="faCircleXmark" id="xmark"></fa-icon
       ></ng-template>
     </div>
   </div>

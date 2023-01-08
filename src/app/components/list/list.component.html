@@ -6,11 +6,14 @@
     <div>{{ narocilo.cost }} €</div>
   </div>
   <div class="narocilo-dostavljalec">
-    <div>{{ narocilo.firstName }}</div>
-    <div>{{ narocilo.lastName }}</div>
+    <div>dostavljalec:</div>
+    <div class="ime">
+      <div id="ime">{{ narocilo.firstName }}</div>
+      <div>{{ narocilo.lastName }}</div>
+    </div>
   </div>
   <div class="narocilo-cas">
-    <div>čas: {{ narocilo.time }} min</div>
-    <div>razdalja: {{ narocilo.distance }} km</div>
+    <div>čas: {{ narocilo.time / 60 | number : "1.2-2" }} min</div>
+    <div>razdalja: {{ narocilo.distance | number : "1.2-2" }} km</div>
   </div>
 </div>

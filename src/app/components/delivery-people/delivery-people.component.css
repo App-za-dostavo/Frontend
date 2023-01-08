@@ -38,3 +38,11 @@ fa-icon {
 .transport {
     padding-right: 50px;
 }
+
+#check {
+    background-color: rgb(46, 213, 46);
+}
+
+#xmark {
+    color: rgb(230, 47, 47);
+}
