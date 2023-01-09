@@ -12,11 +12,11 @@ export class OrderComponent implements OnInit {
 
   public listNarocil: Narocilo[] | undefined;
   public novoNarocilo!: Narocilo;
+  public poslanoNarocilo = false;
 
   ngOnInit(): void {
     this.deliveryService.getOrders().subscribe(
       (data) => {
-        console.log(data);
         this.listNarocil = data;
       },
       (error) => {
@@ -33,16 +33,11 @@ export class OrderComponent implements OnInit {
         (data) => {
           this.novoNarocilo = data;
         },
-        (error) =>
-          console.error(
-            'error',
-            error,
-            typeof this.novoNarocilo,
-            JSON.stringify(this.novoNarocilo),
-            typeof JSON.stringify(this.novoNarocilo)
-          )
+        (error) => console.error('error', error)
       );
-    console.log(this.getNarocilo());
+    setTimeout(() => {
+      this.poslanoNarocilo = true;
+    }, 100);
   }
 
   public selectedNarocilo?: Narocilo;

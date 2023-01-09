@@ -14,4 +14,9 @@
   </li>
 </ul>
 
-<button class="bottom-button" (click)="postNewOrder()">Oddaj naročilo</button>
+<div>
+  <button class="bottom-button" (click)="postNewOrder()">Oddaj naročilo</button>
+  <div class="poslanoNarociloModal" *ngIf="poslanoNarocilo">
+    Naročilo je poslano
+  </div>
+</div>

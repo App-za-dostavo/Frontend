@@ -7,6 +7,7 @@
     align-items: center;
     justify-content: space-between;
     font-size: large;
+    text-align: center;
 }
 
 .bottom-button {
@@ -48,4 +49,16 @@ h3 {
     align-items: center;
     justify-content: space-between;
     transition: 0.4s;
+}
+
+.poslanoNarociloModal {
+    background-color: rgb(147, 236, 147);
+    text-align: center;
+    border-radius: 10px;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 200%);
 }
